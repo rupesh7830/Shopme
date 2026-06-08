@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+@import "tailwindcss";
+
+:root {
+    --primary: #B88A44;
+    --background: #FFFFFF;
+    --section-bg: #F8F8F8;
+    --text-dark: #111827;
+    --border-color: #E5E7EB;
+
+    --heading-font: 'Playfair Display', serif;
+    --body-font: 'Poppins', sans-serif;
+}
+
+body {
+    font-family: var(--body-font);
+    background: var(--background);
+    color: var(--text-dark);
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: var(--heading-font);
+}
+
+
+/* Product Card Transitions */
+.product-card{
+    transition: all .4s ease;
+}
+
+.product-card.hide{
+    opacity:0;
+    transform:scale(.9);
+    pointer-events:none;
+}
+
+.product-card.show{
+    opacity:1;
+    transform:scale(1);
+}
