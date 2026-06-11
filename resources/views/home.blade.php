@@ -190,144 +190,47 @@
             class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5">
 
             <!-- Fashion -->
-            <a
-                href="#"
-                class="group relative overflow-hidden rounded-3xl h-[280px]">
 
-                <img
-                    src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=800"
-                    class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
-
-                <div
-                    class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent">
-                </div>
-
-                <div
-                    class="absolute bottom-5 left-5 text-white">
-
-                    <h3 class="font-semibold text-lg">
-                        Fashion
-                    </h3>
-
-                    <p class="text-xs opacity-80">
-                        2,400+ Items
-                    </p>
-
-                </div>
-
-            </a>
+            <!-- Category Card Component -->
+             <x-category-card
+                a="#"
+                image="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?w=800"
+                title="Fashion"
+                itemCount="2,400+ Items"
+            />
 
             <!-- Electronics -->
-            <a
-                href="#"
-                class="group relative overflow-hidden rounded-3xl h-[280px]">
-
-                <img
-                    src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=800"
-                    class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
-
-                <div
-                    class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent">
-                </div>
-
-                <div
-                    class="absolute bottom-5 left-5 text-white">
-
-                    <h3 class="font-semibold text-lg">
-                        Electronics
-                    </h3>
-
-                    <p class="text-xs opacity-80">
-                        1,800+ Items
-                    </p>
-
-                </div>
-
-            </a>
+            <x-category-card
+                a="#"
+                image="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=800"
+                title="Electronics"
+                itemCount="1,800+ Items"
+            />
 
             <!-- Footwear -->
-            <a
-                href="#"
-                class="group relative overflow-hidden rounded-3xl h-[280px]">
-
-                <img
-                    src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=800"
-                    class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
-
-                <div
-                    class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent">
-                </div>
-
-                <div
-                    class="absolute bottom-5 left-5 text-white">
-
-                    <h3 class="font-semibold text-lg">
-                        Footwear
-                    </h3>
-
-                    <p class="text-xs opacity-80">
-                        3,100+ Items
-                    </p>
-
-                </div>
-
-            </a>
+            <x-category-card
+                a="#"
+                image="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=800"
+                title="Footwear"
+                itemCount="3,100+ Items"
+            />
 
             <!-- Watches -->
-            <a
-                href="#"
-                class="group relative overflow-hidden rounded-3xl h-[280px]">
-
-                <img
-                    src="https://images.unsplash.com/photo-1523170335258-f5ed11844a49?w=800"
-                    class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
-
-                <div
-                    class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent">
-                </div>
-
-                <div
-                    class="absolute bottom-5 left-5 text-white">
-
-                    <h3 class="font-semibold text-lg">
-                        Watches
-                    </h3>
-
-                    <p class="text-xs opacity-80">
-                        900+ Items
-                    </p>
-
-                </div>
-
-            </a>
+            <x-category-card
+                a="#"
+                image="https://images.unsplash.com/photo-1523170335258-f5ed11844a49?w=800"
+                title="Watches"
+                itemCount="900+ Items"
+            />
 
             <!-- Bags -->
-            <a
-                href="#"
-                class="group relative overflow-hidden rounded-3xl h-[280px]">
+            <x-category-card
+                a="#"
+                image="https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=800"
+                title="Bags"
+                itemCount="1,200+ Items"
+            />
 
-                <img
-                    src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=800"
-                    class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
-
-                <div
-                    class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent">
-                </div>
-
-                <div
-                    class="absolute bottom-5 left-5 text-white">
-
-                    <h3 class="font-semibold text-lg">
-                        Bags
-                    </h3>
-
-                    <p class="text-xs opacity-80">
-                        1,500+ Items
-                    </p>
-
-                </div>
-
-            </a>
 
         </div>
 
@@ -368,310 +271,78 @@
 
         <!-- Filter Tabs -->
         <div class="flex flex-wrap gap-3 mb-10">
-        <button class="filter-btn px-5 py-2 rounded-full bg-black text-white text-sm" data-category="all">
+        <x-filter-button data-category="all">
             All
-        </button>
+        </x-filter-button>
 
-        <button class="filter-btn px-5 py-2 rounded-full border border-gray-200 text-sm hover:bg-white" data-category="watches">
+        <x-filter-button data-category="watches">
             Watches
-        </button>
+        </x-filter-button>
 
-        <button class="filter-btn px-5 py-2 rounded-full border border-gray-200 text-sm hover:bg-white" data-category="footwear">
+        <x-filter-button data-category="footwear">
             Footwear
-        </button>
+        </x-filter-button>
 
-        <button class="filter-btn px-5 py-2 rounded-full border border-gray-200 text-sm hover:bg-white" data-category="bags">
+        <x-filter-button data-category="bags">
             Bags
-        </button>
+        </x-filter-button>
 
-        <button class="filter-btn px-5 py-2 rounded-full border border-gray-200 text-sm hover:bg-white" data-category="electronics">
+        <x-filter-button data-category="electronics">
             Electronics
-        </button>
+        </x-filter-button>
 
-        <button class="filter-btn px-5 py-2 rounded-full border border-gray-200 text-sm hover:bg-white" data-category="fashion">
+        <x-filter-button data-category="fashion">
             Fashion
-        </button>
+        </x-filter-button>
 
         </div>
+
 
         <!-- Products Grid -->
         <div id="productsGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
 
             <!-- Product 1 -->
-            <div class="product-card show group bg-white rounded-3xl overflow-hidden hover:shadow-xl transition duration-300"
-            data-category="watches">
 
-            <div class="relative overflow-hidden">
-
-            <span
-                class="absolute top-4 left-4 z-10 px-3 py-1 text-xs rounded-full bg-white">
-                Best Seller
-            </span>
-
-            <img
-                src="https://images.unsplash.com/photo-1523170335258-f5ed11844a49?w=800"
-                class="w-full h-[320px] object-cover group-hover:scale-105 transition duration-500">
-
-            <!-- Quick Add Button -->
-            <div
-                class="absolute bottom-4 left-4 right-4 translate-y-20 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300">
-
-                <button
-                class="w-full bg-black text-white py-3 rounded-2xl font-medium flex items-center justify-center gap-2 hover:bg-[#B88A44] transition">
-
-                <svg xmlns="http://www.w3.org/2000/svg"
-                    class="w-4 h-4"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor">
-
-                    <path stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-1.5 6h13M9 21a1 1 0 100-2 1 1 0 000 2zm10 0a1 1 0 100-2 1 1 0 000 2z"/>
-
-                </svg>
-
-                Quick Add
-
-                </button>
-
-            </div>
-
-            </div>
-
-                <div class="p-5">
-
-                    <p class="text-xs text-gray-400">
-                        TimeCraft
-                    </p>
-
-                    <h3 class="mt-1 font-semibold text-lg">
-                        Classic Chronograph
-                    </h3>
-
-                    <div class="mt-2 flex items-center justify-between">
-
-                        <span class="font-bold">
-                            $249
-                        </span>
-
-                        <span class="text-sm text-[#B88A44]">
-                            ★ 4.8
-                        </span>
-
-                    </div>
-
-                </div>
-
-            </div>
+             <x-product-card
+                category="watches"
+                image="https://images.unsplash.com/photo-1523170335258-f5ed11844a49?w=800"
+                title="Obsidian Watch"
+                subtitle="Timecraft"
+                price="$349"
+                rating="4.8"
+                badge="New" />
 
             <!-- Product 2 -->
-            <div class="product-card show group bg-white rounded-3xl overflow-hidden hover:shadow-xl transition duration-300"
-            data-category="footwear">
-
-                <div class="relative overflow-hidden">
-
-                    <span
-                        class="absolute top-4 left-4 z-10 px-3 py-1 text-xs rounded-full bg-[#B88A44] text-white">
-                        Trending
-                    </span>
-
-                    <img
-                        src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=800"
-                        class="w-full h-[320px] object-cover group-hover:scale-105 transition duration-500">
-
-                        <!-- Quick Add Button -->
-            <div
-                class="absolute bottom-4 left-4 right-4 translate-y-20 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300">
-
-                <button
-                class="w-full bg-black text-white py-3 rounded-2xl font-medium flex items-center justify-center gap-2 hover:bg-[#B88A44] transition">
-
-                    <svg xmlns="http://www.w3.org/2000/svg"
-                    class="w-4 h-4"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor">
-
-                        <path stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-1.5 6h13M9 21a1 1 0 100-2 1 1 0 000 2zm10 0a1 1 0 100-2 1 1 0 000 2z"/>
-
-                    </svg>
-
-                        Quick Add
-
-                </button>
-
-                </div>
-
-                </div>
-
-                <div class="p-5">
-
-                    <p class="text-xs text-gray-400">
-                        AeroStep
-                    </p>
-
-                    <h3 class="mt-1 font-semibold text-lg">
-                        Air Runner Pro
-                    </h3>
-
-                    <div class="mt-2 flex items-center justify-between">
-
-                        <span class="font-bold">
-                            $179
-                        </span>
-
-                        <span class="text-sm text-[#B88A44]">
-                            ★ 4.9
-                        </span>
-
-                    </div>
-
-                </div>
-
-            </div>
+            <x-product-card
+                category="footwear"
+                image="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=800"
+                title="Air Runner Pro"
+                subtitle="AeroStep"
+                price="$179"
+                rating="4.9"
+                badge="Trending" />
 
             <!-- Product 3 -->
-            <div class="product-card show group bg-white rounded-3xl overflow-hidden hover:shadow-xl transition duration-300"
-                data-category="bags">
-
-                <div class="relative overflow-hidden">
-
-                    <span
-                        class="absolute top-4 left-4 z-10 px-3 py-1 text-xs rounded-full bg-white">
-                        New
-                    </span>
-
-                    <img
-                        src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=800"
-                        class="w-full h-[320px] object-cover group-hover:scale-105 transition duration-500">
-                        <!-- Quick Add Button -->
-                        <div
-                            class="absolute bottom-4 left-4 right-4 translate-y-20 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300">
-
-                            <button
-                            class="w-full bg-black text-white py-3 rounded-2xl font-medium flex items-center justify-center gap-2 hover:bg-[#B88A44] transition">
-
-                            <svg xmlns="http://www.w3.org/2000/svg"
-                                class="w-4 h-4"
-                                fill="none"
-                                viewBox="0 0 24 24"
-                                stroke="currentColor">
-
-                                <path stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    stroke-width="2"
-                                    d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-1.5 6h13M9 21a1 1 0 100-2 1 1 0 000 2zm10 0a1 1 0 100-2 1 1 0 000 2z"/>
-
-                            </svg>
-
-                            Quick Add
-
-                            </button>
-
-                        </div>
-
-                </div>
-
-                <div class="p-5">
-
-                    <p class="text-xs text-gray-400">
-                        Maison Grey
-                    </p>
-
-                    <h3 class="mt-1 font-semibold text-lg">
-                        Structured Tote
-                    </h3>
-
-                    <div class="mt-2 flex items-center justify-between">
-
-                        <span class="font-bold">
-                            $139
-                        </span>
-
-                        <span class="text-sm text-[#B88A44]">
-                            ★ 4.7
-                        </span>
-
-                    </div>
-
-                </div>
-
-            </div>
+            <x-product-card
+                category="bags"
+                image="https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=800"
+                title="Imperial Bags"
+                subtitle="Elite Bags"
+                price="$349"
+                rating="4.7"
+                badge="Best Seller" />
 
             <!-- Product 4 -->
-            <div class="product-card show group bg-white rounded-3xl overflow-hidden hover:shadow-xl transition duration-300"
-            data-category="electronics">
 
-                <div class="relative overflow-hidden">
 
-                    <span
-                        class="absolute top-4 left-4 z-10 px-3 py-1 text-xs rounded-full bg-[#B88A44] text-white">
-                        Sale
-                    </span>
-
-                    <img
-                        src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=800"
-                        class="w-full h-[320px] object-cover group-hover:scale-105 transition duration-500">
-                        <!-- Quick Add Button -->
-                            <div
-                                class="absolute bottom-4 left-4 right-4 translate-y-20 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300">
-
-                                <button
-                                class="w-full bg-black text-white py-3 rounded-2xl font-medium flex items-center justify-center gap-2 hover:bg-[#B88A44] transition">
-
-                                <svg xmlns="http://www.w3.org/2000/svg"
-                                    class="w-4 h-4"
-                                    fill="none"
-                                    viewBox="0 0 24 24"
-                                    stroke="currentColor">
-
-                                    <path stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        stroke-width="2"
-                                        d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-1.5 6h13M9 21a1 1 0 100-2 1 1 0 000 2zm10 0a1 1 0 100-2 1 1 0 000 2z"/>
-
-                                </svg>
-
-                                Quick Add
-
-                                </button>
-
-                            </div>
-
-                </div>
-
-                <div class="p-5">
-
-                    <p class="text-xs text-gray-400">
-                        TechLux
-                    </p>
-
-                    <h3 class="mt-1 font-semibold text-lg">
-                        ProMax Smartphone
-                    </h3>
-
-                    <div class="mt-2 flex items-center justify-between">
-
-                        <span class="font-bold">
-                            $899
-                        </span>
-
-                        <span class="text-sm text-[#B88A44]">
-                            ★ 4.8
-                        </span>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
+            <x-product-card
+                category="electronics"
+                image="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=800"
+                title="ProMax Smartphone"
+                subtitle="TechLux"
+                price="$899"
+                rating="4.8"
+                badge="Sale" />
 
     </div>
 
@@ -712,247 +383,47 @@
         <div class="grid grid-cols-2 lg:grid-cols-4 gap-6">
 
             <!-- Card 1 -->
-            <a href="#"
-                class="group relative overflow-hidden rounded-3xl">
-
-                <span
-                        class="absolute top-4 left-4 z-20 px-3 py-1 text-xs rounded-full bg-[#B88A44] text-white">
-                        New
-                    </span>
-
-                    <!-- Wishlist -->
-                    <button
-                        class="absolute top-4 right-4 z-20 w-10 h-10 rounded-full bg-white flex items-center justify-center
-                        opacity-0 translate-y-3
-                        group-hover:opacity-100 group-hover:translate-y-0
-                        transition duration-300">
-
-                        <x-heroicon-o-heart class="w-5 h-5"/>
-
-                    </button>
-                <img
-                    src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?w=1000"
-                    alt=""
-                    class="w-full h-[280px] md:h-[350px] lg:h-[420px] object-cover group-hover:scale-110 transition duration-700">
-                    <!-- Overlay -->
-                    <div
-                        class="absolute inset-0 bg-gradient-to-t
-                        from-black/60 via-black/10 to-transparent
-                        opacity-0 group-hover:opacity-100
-                        transition duration-500">
-
-                    </div>
-
-                    <!-- Product Info -->
-                    <div
-                        class="absolute left-0 right-0 bottom-0 p-6
-                        translate-y-10 opacity-0
-                        group-hover:translate-y-0
-                        group-hover:opacity-100
-                        transition duration-500 bg-white/50">
-
-                        <p class="text-black/60 text-sm">
-                        Aura Fashion
-                        </p>
-
-                        <h3 class="text-black font-semibold text-lg">
-                            Luxury Tshirt
-                        </h3>
-
-                        <p class="text-[#D4A45A] font-semibold mt-1">
-                            $349
-                        </p>
-
-                    </div>
-
-            </a>
+                <x-arrivals-card
+                    a="#"
+                    image="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?w=1000"
+                    subtitle="Aura Fashion"
+                    title="Luxury Tshirt"
+                    price="$349"
+                    badge="New"
+                />
 
             <!-- Card 2 -->
-            <a href="#"
-                class="group relative overflow-hidden rounded-3xl">
 
-                    <!-- Badge -->
-                    <span
-                        class="absolute top-4 left-4 z-20 px-3 py-1 text-xs rounded-full bg-[#B88A44] text-white">
-                        New
-                    </span>
-
-                    <!-- Wishlist -->
-                    <button
-                        class="absolute top-4 right-4 z-20 w-10 h-10 rounded-full bg-white flex items-center justify-center
-                        opacity-0 translate-y-3
-                        group-hover:opacity-100 group-hover:translate-y-0
-                        transition duration-300">
-
-                        <x-heroicon-o-heart class="w-5 h-5"/>
-
-                    </button>
-
-                    <!-- Image -->
-                    <img
-                        src="https://images.unsplash.com/photo-1547996160-81dfa63595aa?w=1000"
-                        alt=""
-                        class="w-full h-[280px] md:h-[350px] lg:h-[420px]
-                        object-cover
-                        group-hover:scale-110
-                        transition duration-700">
-
-                    <!-- Overlay -->
-                    <div
-                        class="absolute inset-0 bg-gradient-to-t
-                        from-black/60 via-black/10 to-transparent
-                        opacity-0 group-hover:opacity-100
-                        transition duration-500">
-
-                    </div>
-
-                    <!-- Product Info -->
-                    <div
-                        class="absolute left-0 right-0 bottom-0 p-6
-                        translate-y-10 opacity-0
-                        group-hover:translate-y-0
-                        group-hover:opacity-100
-                        transition duration-500 bg-white/50">
-
-                        <p class="text-black/60 text-sm">
-                            Timecraft
-                        </p>
-
-                        <h3 class="text-black font-semibold text-lg">
-                            Obsidian Watch
-                        </h3>
-
-                        <p class="text-[#D4A45A] font-semibold mt-1">
-                            $349
-                        </p>
-
-                    </div>
-
-                </a>
+            <x-arrivals-card
+                a="#"
+                image="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=1000"
+                subtitle="Aura Fashion"
+                title="Luxury Tshirt"
+                price="$349"
+                badge="New"
+            />
 
             <!-- Card 3 -->
-            <a href="#"
-                class="group relative overflow-hidden rounded-3xl">
-                <!-- Badge -->
-                    <span
-                        class="absolute top-4 left-4 z-20 px-3 py-1 text-xs rounded-full bg-[#B88A44] text-white">
-                        New
-                    </span>
 
-                    <!-- Wishlist -->
-                    <button
-                        class="absolute top-4 right-4 z-20 w-10 h-10 rounded-full bg-white flex items-center justify-center
-                        opacity-0 translate-y-3
-                        group-hover:opacity-100 group-hover:translate-y-0
-                        transition duration-300">
-
-                        <x-heroicon-o-heart class="w-5 h-5"/>
-
-                    </button>
-
-                <img
-                    src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=1000"
-                    alt=""
-                    class="w-full h-[280px] md:h-[350px] lg:h-[420px]
-                        object-cover
-                        group-hover:scale-110
-                        transition duration-700">
-                        <!-- Overlay -->
-                    <div
-                        class="absolute inset-0 bg-gradient-to-t
-                        from-black/60 via-black/10 to-transparent
-                        opacity-0 group-hover:opacity-100
-                        transition duration-500">
-
-                    </div>
-
-                    <!-- Product Info -->
-                    <div
-                        class="absolute left-0 right-0 bottom-0 p-6
-                        translate-y-10 opacity-0
-                        group-hover:translate-y-0
-                        group-hover:opacity-100
-                        transition duration-500 bg-white/50">
-
-                        <p class="text-black/60 text-sm">
-                        StrideX
-                        </p>
-
-                        <h3 class="text-black font-semibold text-lg">
-                            Traditional Shoe
-                        </h3>
-
-                        <p class="text-[#D4A45A] font-semibold mt-1">
-                            $249
-                        </p>
-
-                    </div>
-        
-
-            </a>
+                <x-arrivals-card
+                    a="#"
+                    image="https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=1000"
+                    subtitle="Elite Bags"
+                    title="Imperial Bags"
+                    price="$349"
+                    badge="New"
+                />
 
             <!-- Card 4 -->
-            <a href="#"
-                class="group relative overflow-hidden rounded-3xl">
 
-                <!-- Badge -->
-                    <span
-                        class="absolute top-4 left-4 z-20 px-3 py-1 text-xs rounded-full bg-[#B88A44] text-white">
-                        New
-                    </span>
-
-                    <!-- Wishlist -->
-                    <button
-                        class="absolute top-4 right-4 z-20 w-10 h-10 rounded-full bg-white flex items-center justify-center
-                        opacity-0 translate-y-3
-                        group-hover:opacity-100 group-hover:translate-y-0
-                        transition duration-300">
-
-                        <x-heroicon-o-heart class="w-5 h-5"/>
-
-                    </button>
-
-                <img
-                    src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=1000"
-                    alt=""
-                    class="w-full h-[280px] md:h-[350px] lg:h-[420px]
-                        object-cover
-                        group-hover:scale-110
-                        transition duration-700">
-
-                        <!-- Overlay -->
-                    <div
-                        class="absolute inset-0 bg-gradient-to-t
-                        from-black/60 via-black/10 to-transparent
-                        opacity-0 group-hover:opacity-100
-                        transition duration-500">
-
-                    </div>
-
-                    <!-- Product Info -->
-                    <div
-                        class="absolute left-0 right-0 bottom-0 p-6
-                        translate-y-10 opacity-0
-                        group-hover:translate-y-0
-                        group-hover:opacity-100
-                        transition duration-500 bg-white/50">
-
-                        <p class="text-black/60 text-sm">
-                        Elite Bags
-                        </p>
-
-                        <h3 class="text-black font-semibold text-lg">
-                            Imperial Bags
-                        </h3>
-
-                        <p class="text-[#D4A45A] font-semibold mt-1">
-                            $349
-                        </p>
-
-                    </div>
-
-            </a>
-
+            <x-arrivals-card
+                a="#"
+                image="https://images.unsplash.com/photo-1547996160-81dfa63595aa?w=1000"
+                subtitle="Timecraft"
+                title="Obsidian Watch"
+                price="$349"
+                badge="New"
+            />
         </div>
 
     </div>

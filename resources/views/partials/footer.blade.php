@@ -1,47 +1,46 @@
-<footer class="bg-[#0A0A0A] text-white">
 
-    <div class="max-w-[1280px] mx-auto px-6 lg:px-8 py-20">
+<footer class="bg-gradient-to-b from-[#111111] via-[#0A0A0A] to-black text-white border-t border-white/10">
 
-        <div class="grid lg:grid-cols-5 gap-12">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8 py-10 lg:py-10">
+
+        <!-- Top Section -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12">
 
             <!-- Brand -->
-            <div class="lg:col-span-2">
+            <div class="lg:col-span-5">
 
-                <a href="/"
-                    class="text-4xl font-bold">
+                <a href="/" class="inline-block text-4xl font-bold tracking-tight">
                     Shop<span class="text-[#B88A44]">Me</span>
                 </a>
 
-                <p
-                    class="mt-8 max-w-md text-gray-400 leading-8">
-
-                    Your premium destination for fashion,
-                    electronics, footwear, watches and accessories.
-                    Curated with care. Delivered with confidence.
-
+                <p class="mt-7 max-w-md text-[15px] leading-8 text-gray-400">
+                    Discover a curated collection of fashion, electronics,
+                    footwear, watches and premium lifestyle essentials.
+                    Built for modern shoppers who value quality,
+                    style and seamless shopping experiences.
                 </p>
 
                 <!-- Social -->
-                <div class="flex gap-3 mt-8">
+                <div class="flex items-center gap-4 mt-8">
 
                     <a href="#"
-                        class="w-11 h-11 rounded-full bg-white/5 hover:bg-[#B88A44] transition flex items-center justify-center">
+                        class="w-11 h-11 rounded-full border border-white/10 bg-white/5 backdrop-blur-sm flex items-center justify-center transition-all duration-300 hover:bg-[#B88A44] hover:border-[#B88A44] hover:-translate-y-1">
 
-                        <x-heroicon-o-camera class="w-5 h-5" />
+                        <x-heroicon-o-camera class="w-5 h-5"/>
 
                     </a>
 
                     <a href="#"
-                        class="w-11 h-11 rounded-full bg-white/5 hover:bg-[#B88A44] transition flex items-center justify-center">
+                        class="w-11 h-11 rounded-full border border-white/10 bg-white/5 backdrop-blur-sm flex items-center justify-center transition-all duration-300 hover:bg-[#B88A44] hover:border-[#B88A44] hover:-translate-y-1">
 
-                        <x-heroicon-o-chat-bubble-left-right class="w-5 h-5" />
+                        <x-heroicon-o-chat-bubble-left-right class="w-5 h-5"/>
 
                     </a>
 
                     <a href="#"
-                        class="w-11 h-11 rounded-full bg-white/5 hover:bg-[#B88A44] transition flex items-center justify-center">
+                        class="w-11 h-11 rounded-full border border-white/10 bg-white/5 backdrop-blur-sm flex items-center justify-center transition-all duration-300 hover:bg-[#B88A44] hover:border-[#B88A44] hover:-translate-y-1">
 
-                        <x-heroicon-o-globe-alt class="w-5 h-5" />
+                        <x-heroicon-o-globe-alt class="w-5 h-5"/>
 
                     </a>
 
@@ -50,27 +49,20 @@
                 <!-- App Download -->
                 <div class="mt-10">
 
-                    <h4
-                        class="text-xs uppercase tracking-[0.25em] text-gray-500">
-
+                    <h4 class="text-xs uppercase tracking-[0.25em] text-gray-500">
                         Download Our App
-
                     </h4>
 
-                    <div class="flex gap-3 mt-4">
+                    <div class="flex flex-wrap gap-4 mt-5">
 
                         <a href="#"
-                            class="px-5 py-3 rounded-xl bg-white/5 hover:bg-white/10 transition text-sm">
-
+                            class="px-5 py-3 rounded-xl border border-white/10 bg-white/5 hover:bg-white/10 transition-all duration-300 text-sm font-medium">
                             App Store ↗
-
                         </a>
 
                         <a href="#"
-                            class="px-5 py-3 rounded-xl bg-white/5 hover:bg-white/10 transition text-sm">
-
+                            class="px-5 py-3 rounded-xl border border-white/10 bg-white/5 hover:bg-white/10 transition-all duration-300 text-sm font-medium">
                             Google Play ↗
-
                         </a>
 
                     </div>
@@ -80,74 +72,71 @@
             </div>
 
             <!-- Shop -->
-            <div>
+            <div class="lg:col-span-2">
 
-                <h3
-                    class="font-semibold mb-6">
+                <h3 class="text-white font-semibold tracking-wide mb-6">
                     Shop
                 </h3>
 
-                <ul class="space-y-4 text-gray-400">
+                <ul class="space-y-4">
 
-                    <li><a href="#" class="hover:text-[#B88A44]">Men's Fashion</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-[#B88A44] transition-colors duration-300">Men's Fashion</a></li>
 
-                    <li><a href="#" class="hover:text-[#B88A44]">Women's Fashion</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-[#B88A44] transition-colors duration-300">Women's Fashion</a></li>
 
-                    <li><a href="#" class="hover:text-[#B88A44]">Electronics</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-[#B88A44] transition-colors duration-300">Electronics</a></li>
 
-                    <li><a href="#" class="hover:text-[#B88A44]">Footwear</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-[#B88A44] transition-colors duration-300">Footwear</a></li>
 
-                    <li><a href="#" class="hover:text-[#B88A44]">Watches</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-[#B88A44] transition-colors duration-300">Watches</a></li>
 
-                    <li><a href="#" class="hover:text-[#B88A44]">Bags</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-[#B88A44] transition-colors duration-300">Accessories</a></li>
 
                 </ul>
 
             </div>
 
             <!-- Company -->
-            <div>
+            <div class="lg:col-span-2">
 
-                <h3
-                    class="font-semibold mb-6">
+                <h3 class="text-white font-semibold tracking-wide mb-6">
                     Company
                 </h3>
 
-                <ul class="space-y-4 text-gray-400">
+                <ul class="space-y-4">
 
-                    <li><a href="#" class="hover:text-[#B88A44]">About Us</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-[#B88A44] transition-colors duration-300">About Us</a></li>
 
-                    <li><a href="#" class="hover:text-[#B88A44]">Careers</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-[#B88A44] transition-colors duration-300">Careers</a></li>
 
-                    <li><a href="#" class="hover:text-[#B88A44]">Press</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-[#B88A44] transition-colors duration-300">Press</a></li>
 
-                    <li><a href="#" class="hover:text-[#B88A44]">Blog</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-[#B88A44] transition-colors duration-300">Blog</a></li>
 
-                    <li><a href="#" class="hover:text-[#B88A44]">Sustainability</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-[#B88A44] transition-colors duration-300">Sustainability</a></li>
 
                 </ul>
 
             </div>
 
             <!-- Support -->
-            <div>
+            <div class="lg:col-span-3">
 
-                <h3
-                    class="font-semibold mb-6">
+                <h3 class="text-white font-semibold tracking-wide mb-6">
                     Support
                 </h3>
 
-                <ul class="space-y-4 text-gray-400">
+                <ul class="space-y-4">
 
-                    <li><a href="#" class="hover:text-[#B88A44]">Help Center</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-[#B88A44] transition-colors duration-300">Help Center</a></li>
 
-                    <li><a href="#" class="hover:text-[#B88A44]">Track Order</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-[#B88A44] transition-colors duration-300">Track Order</a></li>
 
-                    <li><a href="#" class="hover:text-[#B88A44]">Returns & Refunds</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-[#B88A44] transition-colors duration-300">Returns & Refunds</a></li>
 
-                    <li><a href="#" class="hover:text-[#B88A44]">Size Guide</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-[#B88A44] transition-colors duration-300">Shipping Information</a></li>
 
-                    <li><a href="#" class="hover:text-[#B88A44]">Contact Us</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-[#B88A44] transition-colors duration-300">Contact Us</a></li>
 
                 </ul>
 
@@ -155,71 +144,61 @@
 
         </div>
 
-        <!-- Legal Links -->
-        <div class="mt-14">
+        <!-- Divider -->
+        <div class="mt-10 border-t border-white/10 pt-8">
 
-            <h3
-                class="font-semibold mb-6">
-                Legal
-            </h3>
+            <div class="flex flex-col lg:flex-row items-center justify-between gap-6">
 
-            <div
-                class="flex flex-wrap gap-6 text-gray-400">
+                <!-- Copyright -->
+                <div class="text-center lg:text-left">
 
-                <a href="#" class="hover:text-[#B88A44]">
-                    Privacy Policy
-                </a>
+                    <p class="text-sm text-gray-500">
+                        © {{ date('Y') }} <span class="text-white font-medium">ShopMe</span>.
+                        All rights reserved.
+                    </p>
 
-                <a href="#" class="hover:text-[#B88A44]">
-                    Terms of Service
-                </a>
+                    <div class="flex flex-wrap justify-center lg:justify-start gap-5 mt-3 text-sm">
 
-                <a href="#" class="hover:text-[#B88A44]">
-                    Cookie Policy
-                </a>
+                        <a href="#" class="text-gray-500 hover:text-[#B88A44] transition-colors duration-300">
+                            Privacy Policy
+                        </a>
 
-                <a href="#" class="hover:text-[#B88A44]">
-                    Accessibility
-                </a>
+                        <a href="#" class="text-gray-500 hover:text-[#B88A44] transition-colors duration-300">
+                            Terms of Service
+                        </a>
 
-            </div>
+                        <a href="#" class="text-gray-500 hover:text-[#B88A44] transition-colors duration-300">
+                            Cookie Policy
+                        </a>
 
-        </div>
+                        <a href="#" class="text-gray-500 hover:text-[#B88A44] transition-colors duration-300">
+                            Accessibility
+                        </a>
 
-        <!-- Bottom -->
-        <div
-            class="mt-14 pt-8 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-6">
+                    </div>
 
-            <p
-                class="text-sm text-gray-500">
+                </div>
 
-                © {{ date('Y') }} ShopMe.
-                All rights reserved.
+                <!-- Payment -->
+                <div class="flex flex-wrap justify-center gap-3">
 
-            </p>
+                    <span class="px-4 py-2 rounded-xl bg-white/5 border border-white/10 text-xs text-gray-400">
+                        Visa
+                    </span>
 
-            <!-- Payment -->
-            <div class="flex gap-2">
+                    <span class="px-4 py-2 rounded-xl bg-white/5 border border-white/10 text-xs text-gray-400">
+                        Mastercard
+                    </span>
 
-                <span
-                    class="px-3 py-1 rounded-lg bg-white/5 text-xs text-gray-400">
-                    Visa
-                </span>
+                    <span class="px-4 py-2 rounded-xl bg-white/5 border border-white/10 text-xs text-gray-400">
+                        PayPal
+                    </span>
 
-                <span
-                    class="px-3 py-1 rounded-lg bg-white/5 text-xs text-gray-400">
-                    Mastercard
-                </span>
+                    <span class="px-4 py-2 rounded-xl bg-white/5 border border-white/10 text-xs text-gray-400">
+                        Apple Pay
+                    </span>
 
-                <span
-                    class="px-3 py-1 rounded-lg bg-white/5 text-xs text-gray-400">
-                    PayPal
-                </span>
-
-                <span
-                    class="px-3 py-1 rounded-lg bg-white/5 text-xs text-gray-400">
-                    Apple Pay
-                </span>
+                </div>
 
             </div>
 
@@ -228,3 +207,4 @@
     </div>
 
 </footer>
+
