@@ -5,7 +5,7 @@
 
             <!-- Logo -->
             <a href="/" class="text-3xl font-bold">
-            <img src="{{ asset('logo/logo.png') }}" alt="ShopMe Logo" class="h-40 w-auto">
+            <img src="{{ asset('logo/logo.png') }}" alt="ShopMe Logo" loading="lazy" class="h-40 w-auto">
             </a>
 
             <!-- Desktop Menu -->
@@ -158,7 +158,7 @@
                 class="w-9 h-9 rounded-full bg-white/30 backdrop-blur-md border border-white/20
                 flex items-center justify-center
                 hover:bg-[#B88A44] hover:text-white hover:border-[#B88A44]
-                transition-all duration-300 hover:-translate-y-0.5">
+                transition-all duration-300 hover:-translate-y-0.5 cursor-pointer">
 
                 <x-heroicon-o-magnifying-glass class="w-5 h-5" />
 
@@ -167,7 +167,7 @@
                 class="w-9 h-9 rounded-full bg-white/30 backdrop-blur-md border border-white/20
                 flex items-center justify-center
                 hover:bg-[#B88A44] hover:text-white hover:border-[#B88A44]
-                transition-all duration-300 hover:-translate-y-0.5">
+                transition-all duration-300 hover:-translate-y-0.5 cursor-pointer">
 
                 <x-heroicon-o-heart class="w-5 h-5" />
 
@@ -177,7 +177,7 @@
                 class="w-9 h-9 rounded-full bg-white/30 backdrop-blur-md border border-white/20
                 flex items-center justify-center
                 hover:bg-[#B88A44] hover:text-white hover:border-[#B88A44]
-                transition-all duration-300 hover:-translate-y-0.5">
+                transition-all duration-300 hover:-translate-y-0.5 cursor-pointer">
 
                 <x-heroicon-o-shopping-bag class="w-5 h-5" />
 
@@ -327,7 +327,7 @@
     <!-- Search -->
     <div class="p-5">
 
-        <div class="flex items-center gap-3 bg-gray-100 rounded-2xl px-4 py-3">
+        <div class="flex items-center gap-3 bg-white rounded-2xl px-4 py-3">
             <x-heroicon-o-magnifying-glass class="w-5 h-5 text-gray-400"/>
             <input
                 type="text"

@@ -4,7 +4,7 @@
     @include('partials.navbar')
 
     <section
-    class="bg-[#F8F8F8] py-6 flex items-center"
+    class="bg-[#F8F8F8] py-8 flex items-center"
     style="min-height: calc(100vh - 180px);">
 
         <div class="max-w-7xl mx-auto px-6">
@@ -25,7 +25,7 @@
                         </h1>
 
                         <p
-                            class="mt-3 text-gray-500">
+                            class="mt-3 text-gray-500 text-sm">
 
                             Sign in to continue your shopping experience.
 
@@ -40,7 +40,7 @@
                     <form
                         method="POST"
                         action="{{ route('login') }}"
-                        class="space-y-4">
+                        class="space-y-6">
 
                         @csrf
 
@@ -155,33 +155,6 @@
                         </button>
 
                     </form>
-
-                    <!-- Divider -->
-
-                    <div
-                        class="flex items-center gap-4 my-5">
-
-                        <div class="flex-1 h-px bg-gray-200"></div>
-
-                        <span
-                            class="text-sm text-gray-400">
-
-                            OR
-
-                        </span>
-
-                        <div class="flex-1 h-px bg-gray-200"></div>
-
-                    </div>
-
-                    <!-- Google Button -->
-
-                    <button
-                        class="w-full py-3 rounded-2xl border border-gray-200 font-medium hover:bg-gray-50 transition">
-
-                        Continue with Google
-
-                    </button>
 
                     <!-- Register -->
 

@@ -152,25 +152,6 @@
 
                     </form>
 
-                    <div class="flex items-center gap-4 my-5">
-
-                        <div class="flex-1 h-px bg-gray-200"></div>
-
-                        <span class="text-sm text-gray-400">
-                            OR
-                        </span>
-
-                        <div class="flex-1 h-px bg-gray-200"></div>
-
-                    </div>
-
-                    <button
-                        class="w-full py-3 rounded-2xl border border-gray-200 font-medium hover:bg-gray-50 transition">
-
-                        Continue with Google
-
-                    </button>
-
                     <p
                         class="mt-6 text-center text-sm text-gray-500">
 

@@ -1,92 +1,7 @@
-@extends('layouts.app')
-@section('title', 'Dashboard')
-@section('meta_description', 'Dashboard')
-@section('content')
-    <div class="bg-[#F8F8F8] min-h-screen py-10">
-
-        <div class="max-w-7xl mx-auto px-6">
-
-            <!-- Welcome Banner -->
-
-            <div
-                class="bg-gradient-to-r from-black to-[#1A1A1A]
-                rounded-3xl p-8 text-white mb-8">
-
-                <h1 class="text-3xl font-bold">
-                    Welcome Back, {{ Auth::user()->name }} 👋
-                </h1>
-
-                <p class="mt-2 text-gray-300">
-                    Manage your orders, wishlist and account settings.
-                </p>
-
-            </div>
-
-            <div class="grid lg:grid-cols-4 gap-6">
-
-                <!-- Sidebar -->
-
-                <div
-                    class="bg-white rounded-3xl p-6 shadow-sm h-fit">
-
-                    <h3 class="font-bold text-lg mb-6">
-                        My Account
-                    </h3>
-
-                    <nav class="space-y-3">
-
-                        <a href="#"
-                           class="flex items-center gap-3 px-4 py-3 rounded-2xl bg-black text-white">
-
-                            Dashboard
-
-                        </a>
-
-                        <a href="#"
-                           class="flex items-center gap-3 px-4 py-3 rounded-2xl hover:bg-gray-100">
-
-                            My Orders
-
-                        </a>
-
-                        <a href="#"
-                           class="flex items-center gap-3 px-4 py-3 rounded-2xl hover:bg-gray-100">
-
-                            Wishlist
-
-                        </a>
-
-                        <a href="#"
-                           class="flex items-center gap-3 px-4 py-3 rounded-2xl hover:bg-gray-100">
-
-                            Addresses
-
-                        </a>
-
-                        <a href="#"
-                           class="flex items-center gap-3 px-4 py-3 rounded-2xl hover:bg-gray-100">
-
-                            Profile Settings
-
-                        </a>
-
-                        <form method="POST"
-                              action="{{ route('logout') }}">
-
-                            @csrf
-
-                            <button
-                                class="w-full text-left px-4 py-3 rounded-2xl text-red-500 hover:bg-red-50">
-
-                                Logout
-
-                            </button>
-
-                        </form>
-
-                    </nav>
-
-                </div>
+@extends('layouts.user')
+@include ('partials.navbar')
+@section('user-content')
+            <div class="bg-[#F8F8F8] ">
 
                 <!-- Main Content -->
 
@@ -194,10 +109,6 @@
                 </div>
 
             </div>
-
-        </div>
-
-    </div>
 
 
 @endsection
